@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Suite">
+
+     <listeners>
+        <listener class-name="utils.Listeners"/>
+    </listeners>
+
+    <!-- Module 1: Authentication -->
+    
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Module 2: Product -->
+    
+    <test name="Product Tests">
+        <classes>
+            <class name="tests.ProductTest"/>
+        </classes>
+    </test>
+
+    <!-- Module 3: Cart -->
+    
+    <test name="Cart Tests">
+        <classes>
+            <class name="tests.CartTest"/>
+        </classes>
+    </test>
+
+    <!-- Module 4: Checkout -->
+    
+    <test name="Checkout Tests">
+        <classes>
+            <class name="tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+    <!-- Module 5: Problem User -->
+    
+    <test name="Problem User Tests">
+        <classes>
+            <class name="tests.ProblemUserTest"/>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
